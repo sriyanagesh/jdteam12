@@ -1,0 +1,122 @@
+div#banner{
+	background-image: url("dentist1-2.jpg");
+	background-size: cover;
+	background-position:center;
+	text-align:right; 
+	padding:10% 5% 10% 0;
+	
+}
+
+div#grid{
+	background: #6BBAA7; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#6BBAA7, #418b7a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#6BBAA7, #418b7a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#6BBAA7, #418b7a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#6BBAA7, #418b7a);
+	height: auto;
+	overflow:auto;
+	width:auto;
+	}
+	
+div#grid #services{
+	
+	}
+
+.service{
+	overflow:auto;
+	padding:2%;
+	display:inline-block;
+	word-wrap: break-word;
+	width:29%;
+	float:left;
+	}
+
+
+.service p{
+	text-align:left;
+	}
+
+.service img{
+	float:left;
+	padding:2%;
+	width:40%;
+	height: auto;
+
+	}
+
+div#content #banner h1,h4{
+	color:#ffa834;
+	}
+
+div#about{
+	overflow:auto;
+	height:auto;
+	}
+
+div#about #us_different{
+	width:60%;
+	padding: 2% 1%;
+	float:left;
+	display:inline-block;
+	background:#6C648B;
+	word-wrap:break-word;
+	height:auto;
+	}
+
+div#about #us_different img{
+	width:30%;
+	height:auto;
+	margin:2%;
+	float:left;
+	}
+
+div#about #tip_day{
+	width:36%;
+	padding: 2% 1%;
+	
+	float:left;
+	display:inline-block;
+	
+	text-align:center;
+	}
+
+div#grid #serv_mobile{
+	display:none;
+	}
+	
+@media (max-width:800px){
+	
+	}
+	
+@media (max-width:500px){
+div#grid #services{
+	display:none;
+	}
+	
+div#grid #serv_mobile{
+	display:block;
+	text-align:center;
+	Word-wrap:break-word;
+	}
+
+div#grid #serv_mobile a{
+	text-decoration:none;
+	}
+div#about{
+	overflow:visible;
+}
+	
+div#about #us_different{
+	float:none;
+	width:98%;
+	}
+div#about #tip_day{
+	display:none;
+}
+
+div#banner{
+	-webkit-text-stroke-width: 0.1px;
+	-webkit-text-stroke-color: black;
+}
+
+}

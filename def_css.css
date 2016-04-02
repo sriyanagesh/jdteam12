@@ -1,0 +1,253 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	color:white;
+}/*universal settings*/
+body{
+	background: #6c648b; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#6c648b, #B6A19E); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#6c648b, #B6A19E); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#6c648b, #B6A19E); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#6c648b, #B6A19E);
+	font-size:1em;
+}
+
+
+div#page{
+	background-color:;
+	max-width:1100px;
+}
+
+div#header #logo{
+	float: left;
+	width:50%;
+}
+
+div#header #logo img{
+	width:80%;
+	height:auto;
+	}
+
+div#header #side_header{
+	float:right;
+	text-align: right;
+	width:50%;
+}
+
+div#header #side_header a{
+	text-decoration:none;
+	
+}
+
+.header_text{
+	padding:0.25em 1em;
+	border-width:0; 
+	border-radius:1em; 
+	color:grey;
+	height:2em;
+	}
+
+
+.big_words{
+	font-family: 'Open Sans', sans-serif;
+}
+
+div#nav_menu{
+	padding:; 
+	background: #FBA100; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left,  #ffb433 , #FBA100, #ffb433); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right,  #ffb433 , #FBA100, #ffb433); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right,  #ffb433 , #FBA100, #ffb433); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right,  #ffb433 , #FBA100, #ffb433); /* Standard syntax */
+	/*height:3em;*/
+	overflow:auto;
+	height:auto;
+	
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:;
+	
+}
+
+#nav_menu li {
+    float: left;
+	
+}
+
+#nav_menu li a {
+    display: block;
+    color: white;
+	font-weight:bold;
+    text-align: center;
+    padding: 0.85em 1em;
+	
+	
+    text-decoration: none;
+	
+}
+
+#nav_menu li a:hover {
+    background-color: #ffc266;
+}
+
+/*heading sizes for regular screen*/
+h1{
+	font-size:2em;
+	}
+h2{
+	font-size:1.5em;
+	}
+h3{
+	font-size:1.17em;
+	}
+h4{
+	font-size:1.12em;
+	}
+	
+
+	
+div#header{
+	padding: 5% 5% 5% 5%;
+	background: #514b68; /* For browsers that do not support gradients */
+	background: #514b68; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(0,0,0,0), #2e2b3b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0,0,0,0), #2e2b3b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,0,0,0), #2e2b3b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,0,0,0), #2e2b3b);
+	height:auto;
+	overflow:auto;
+	
+}
+
+div#content{
+	background: #B6A19E; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#2e2b3b, #B6A19E); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#2e2b3b, #B6A19E); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#2e2b3b, #B6A19E); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#2e2b3b, #B6A19E);
+	height: auto;
+}
+
+div#footer{
+	color:rgb(255,255,255);
+	background:#2e2b3b;
+	text-align:center;
+	font-family: 'Open Sans', sans-serif;
+	padding: 2% 0;
+}
+
+
+.hidden{
+	display:none;
+	}
+	
+input[type=checkbox]{
+    display: none;
+}
+
+
+input[type=checkbox]:checked + #nav_menu{
+	
+	display:block;
+}
+
+
+
+/*settings for tablet*/
+@media (max-width:800px){
+/*h1{
+	font-size:1.5em;
+	}
+h2{
+	font-size:1.17em;
+	}
+h3{
+	font-size:1.12em;
+	}
+h4{
+	font-size:0.85em;
+	}*/
+	
+	
+body{
+	font-size:0.75em;
+	}
+	
+div#footer{
+	font-size:0.75em;
+}
+
+#nav_menu li a {
+	font-size:1em;
+	}
+div#nav_menu{
+	overflow:auto;
+	height:auto;
+	}
+
+.header_text{
+	display:none;
+	}
+
+	}
+
+
+/*settings for mobile*/
+@media (max-width:500px){
+div#header,div#nav_menu{
+	display:none;
+	}
+.hidden{
+	display:block;	
+	}
+div#mobile_header{
+	background: #FBA100; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left,  #ffb433 , #FBA100, #ffb433); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right,  #ffb433 , #FBA100, #ffb433); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right,  #ffb433 , #FBA100, #ffb433); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right,  #ffb433 , #FBA100, #ffb433); /* Standard syntax */
+	overflow:auto;
+	height:auto;
+	}
+
+div#mobile_header img{
+	height:30px;
+	width:auto;
+	padding:10px;
+	}
+	
+div#mobile_header #mobile_logo{
+	float:left;
+	}
+
+div#mobile_header #menu_icon{
+	float:right;
+	}
+
+input[type=checkbox]:checked + #nav_menu{
+	
+	display:block;
+}
+
+#nav_menu ul {
+		position: static;
+		display: block;
+	}
+	/*Create vertical spacing*/
+#nav_menu li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+#nav_menu ul li, #nav_menu li a {
+		width: 100%;
+	}
+
+
+	}
+
