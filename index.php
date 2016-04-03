@@ -89,7 +89,7 @@
                 	<div id="tip_day">
                     <h2>Tip of the day</h2><br />
                     <hr align="left" style="border-width:1px; width:70%; border-color:white; margin-bottom: 10%;" >
-                    <?php
+                    <!-- <?php
 
 
 
@@ -119,7 +119,7 @@
 								echo "hello mummy!";
 
 
-?>
+?> -->
 
 
 
