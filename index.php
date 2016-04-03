@@ -108,14 +108,13 @@
 								if( !$stmt) {
 								die(print_r(sqlsrv_errors(), true));
 								}
-								$k=0;
+
 								while($row = sqlsrv_fetch_array($stmt,SQLSRV_FETCH_ASSOC)){
-								$tip_arr[$k] = $row[$k];
-								$k++;
+									echo $row[0];
 								}
-								$tip_num = rand(0, count($tip_arr));
-								$tip = $tip_arr[$tip_num];
-							  echo $tip;
+							  // $tip_num = rand(0, count($tip_arr));
+								// $tip = $tip_arr[$tip_num];
+							  // echo $tip;
 								echo "hello mummy!";
 
 
