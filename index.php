@@ -9,26 +9,26 @@
 			<!-- desktop & tablet header-->
             <div id="header">
 				<div id="logo"><a href="#"><img src="images/sample_logo.png" alt="Joaquina_logo"/></a>
-         
+
                 </div>
 				<div id="side_header">
 					<h1 class="big_words"><img src="images/phone_icon.png" style="height:1.25em; width:auto;" /> +1(234)567-8910</h1><br />
 					<h2><a class="big_words" href="#login">Login</a>  |  <a class="big_words" href="#register">Register</a></h2><br />
 					<div><form action="#" method="get">
 						<input class="header_text" type="text" placeholder="search" name="input" />
-					
+
 					</form>
 					</div>
 				</div>
 			</div>
-			
+
 			<!--mobile header & menu-->
             <div id="mobile_header" class="hidden" >
 				<img src="images/sample_logo.png" alt="Joaquina_logo" id="mobile_logo" />
 				<label for="check_menu"><img src="images/menu_icon.png" alt="menu_icon" id="menu_icon" /></label>
-            
+
             </div>
-			
+
 			<!--nav menu-->
 			<input id="check_menu" type="checkbox" >
 			<div id="nav_menu" >
@@ -40,15 +40,15 @@
 					<li><a href="#contact">Contact Us</a></li>
 				</ul>
 			</div>
-            
+
 			<div id="content">
 				<!-- put your code here (area below the header)-->
 				<!-- banner image-->
                 <div id="banner">
-				<h1 class="big_words" style:"color:#ffa834;">Welcome to <br />Joaquina Dental Care</h1><br /> 
-				<h4>We care for your smile.</h4>		
+				<h1 class="big_words" style:"color:#ffa834;">Welcome to <br />Joaquina Dental Care</h1><br />
+				<h4>We care for your smile.</h4>
 				</div>
-				
+
                 <!-- services grid-->
                 <div id="grid">
 					<div id="services">
@@ -68,16 +68,16 @@
                             <p>We treat you and your entire family and care for your overall oral health</p></div>
                     	</div>
                     </div>
-                    
+
                     <div id="serv_mobile">
                     	<h3>Services offered</h3>
                     	<p>Cleaning & prevention</p><p>Consultation</p>
                     	<p>Primary Care</p><p>Cosmetic Surgery</p>
-               
+
                     	<p>and <a href="#"><strong>more...</strong></a></p>
                     </div>
 				</div>
-				
+
                 <!-- About section-->
                 <div id="about">
                 	<div id="us_different"><div><img src="images/clinic_pic.jpg"></div>
@@ -90,19 +90,19 @@
                     <h2>Tip of the day</h2><br />
                     <hr align="left" style="border-width:1px; width:70%; border-color:white; margin-bottom: 10%;" >
                     <?php
-						
-						
-								
+
+
+
 								$serverName = "joaquinateam12.database.windows.net";
 								$connectionInfo = array( "Database"=>"Joaquinateam12", "UID"=>"admin12@joaquinateam12", "PWD"=>"Trotters12");
 								$conn = sqlsrv_connect( $serverName, $connectionInfo);
 								if( $conn ) {
-								
+								echo "connection established";
 								}
 								else {
 								die(print_r(sqlsrv_errors(), true));
 								}
-							
+
 								$sql = "select Tip_Desc from dbo.daily_tip";
 								$stmt = sqlsrv_query($conn, $sql);
 								if( !$stmt) {
@@ -115,24 +115,24 @@
 								}
 								$tip_num = rand(0, count($tip_arr));
 								$tip = $tip_arr[$tip_num];
-							
-								echo $tip."hello mummy!";
+							  echo $tip;
+								echo "hello mummy!";
 
 
 ?>
-						
-						
-					
+
+
+
                     </div>
                 </div>
-                
-			
+
+
 			</div>
             <div id="footer">
 			Developed by Team 12.
 			</div>
-			
+
 		</div>
-        
+
 </body>
 </html>
