@@ -110,8 +110,9 @@
 								}
 
 								while($row = sqlsrv_fetch_array($stmt,SQLSRV_FETCH_ASSOC)){
-									echo $row[0];
+									echo "anything";
 								}
+								print_r $row;
 							  // $tip_num = rand(0, count($tip_arr));
 								// $tip = $tip_arr[$tip_num];
 							  // echo $tip;
